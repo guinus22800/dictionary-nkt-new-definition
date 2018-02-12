@@ -79,11 +79,11 @@ $inuit-global-line-height: 24px;
 
 
 @import "./objects/objects.box";
-@import "./objects/objects.fixed-header";
+// @import "./objects/objects.fixed-header";
 @import "./objects/objects.button";
-@import "./objects/objects.wrapper";
-@import "./objects/objects.nowrap";
-@import "./objects/objects.clickable-string";
+// @import "./objects/objects.wrapper";
+// @import "./objects/objects.nowrap";
+// @import "./objects/objects.clickable-string";
 // @import "./objects/objects.collapsible";
 // @import "./objects/objects.inline-icon";
 // @import "./objects/objects.zoom-control";
@@ -92,7 +92,7 @@ $inuit-global-line-height: 24px;
 // @import "./objects/objects.input-trigger";
 // @import "./objects/objects.liner";
 // @import "./objects/objects.marker";
-@import "./objects/objects.control";
+// @import "./objects/objects.control";
 // @import "./objects/objects.overflow-gradient";
 // @import "./objects/objects.map-container";
 // @import "./objects/objects.map-marker-label";
@@ -100,7 +100,7 @@ $inuit-global-line-height: 24px;
 // @import "./objects/objects.radio";
 // @import "./objects/objects.tag";
 // @import "./objects/objects.gutter";
-@import "./objects/objects.inline-divider";
+// @import "./objects/objects.inline-divider";
 // @import "./objects/objects.no-wrap";
 @import "./objects/objects.text-input-group";
 @import "./objects/objects.text-input";
@@ -119,17 +119,17 @@ $inuit-global-line-height: 24px;
 /* COSMETICS
 ========================================================================== */
 @import "./cosmetics/cosmetics.button";
-@import "./cosmetics/cosmetics.tab-links";
+// @import "./cosmetics/cosmetics.tab-links";
 // @import "./cosmetics/cosmetics.select";
 // @import "./cosmetics/cosmetics.inline-link";
 // @import "./cosmetics/cosmetics.warning-string";
 // @import "./cosmetics/cosmetics.map-container";
 // @import "./cosmetics/cosmetics.zoom-control";
-@import "./cosmetics/cosmetics.header";
+// @import "./cosmetics/cosmetics.header";
 // @import "./cosmetics/cosmetics.overflow-gradient";
 // @import "./cosmetics/cosmetics.location-list-item";
 // @import "./cosmetics/cosmetics.marker";
-@import "./cosmetics/cosmetics.control";
+// @import "./cosmetics/cosmetics.control";
 // @import "./cosmetics/cosmetics.tag";
 // @import "./cosmetics/cosmetics.indeterminate-loader";
 @import "./cosmetics/cosmetics.text-input";
@@ -137,8 +137,8 @@ $inuit-global-line-height: 24px;
 // @import "./cosmetics/cosmetics.type-label";
 // @import "./cosmetics/cosmetics.user-string";
 @import "./cosmetics/cosmetics.definition-list";
-@import "./cosmetics/cosmetics.checkbox";
-@import "./cosmetics/cosmetics.highlight";
+// @import "./cosmetics/cosmetics.checkbox";
+// @import "./cosmetics/cosmetics.highlight";
 @import "./cosmetics/cosmetics.label";
 
 
