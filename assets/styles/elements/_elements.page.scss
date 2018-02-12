@@ -1,0 +1,28 @@
+/* ==========================================================================
+   
+    # PAGE (HTML TAGS ONLY)
+
+========================================================================== */
+
+/**
+ * Main page elements
+ */
+
+
+
+/* Body
+========================================================================== */
+
+html {
+    background-color: $color-primary;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+    font-family: $font-family-body;
+    font-weight: 400;
+    background-color: $color-neutral-10;
+    min-height: 100%;
+    min-height: 100vh;
+}

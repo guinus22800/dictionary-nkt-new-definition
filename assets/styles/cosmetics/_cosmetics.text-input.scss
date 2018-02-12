@@ -1,0 +1,49 @@
+/* ==========================================================================
+   
+    # TEXT INPUT
+
+========================================================================== */
+
+/**
+ * Text input cosmetic styles
+ *
+ * N.B. Refer to c-text-input for layout
+ */
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ * 1. Style the placeholder text
+ */
+
+.c-text-input {
+    // appearance: none;
+    border: none;
+    outline: none;
+    // outline-color: $color-orange-yellow;
+    background-color: $color-neutral-10;
+    box-shadow: $box-shadow-border-input;
+    font-family: $font-family-body;
+    font-weight: $font-weight-body-regular;
+
+    &.s-is-disabled {
+        background-color: $color-neutral-8;
+        color: $color-neutral-10;
+    }
+    
+    &:not(.s-is-disabled) {
+        &:hover,
+        &:active,
+        &.s-is-active {
+            box-shadow: $box-shadow-border-input-active;
+        }
+    }
+
+    &:placeholder {
+        color: $color-neutral-7; /*[1]*/
+    }
+}
+

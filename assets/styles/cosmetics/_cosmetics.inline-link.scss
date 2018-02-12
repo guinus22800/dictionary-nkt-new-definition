@@ -1,0 +1,30 @@
+/* ==========================================================================
+   
+    # BUTTON
+
+========================================================================== */
+
+/**
+ * Radio button cosmetic styles
+ *
+ * N.B. Refer to o-radio for layout
+ */
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ *
+ */
+
+.c-inline-link {
+    color: $color-neutral-0;
+    text-decoration: underline;
+    &:hover,
+    &:active {
+        background-color: $color-neutral-9;
+    }
+}
+

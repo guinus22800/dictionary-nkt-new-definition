@@ -1,0 +1,46 @@
+/* ==========================================================================
+   
+    # CATEGORY LABEL
+
+========================================================================== */
+
+/**
+ * An emphasised style for communicating the category / topic
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.c-category-label {
+    font-family: $font-family-body;
+    font-weight: $font-weight-body-semi;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Category modifiers
+========================================================================== */
+
+.c-category-label--BRANCH {
+    color: $color-BRANCH;
+}
+
+
+.c-category-label--KMC {
+    color: $color-KMC;
+}
+
+
+.c-category-label--KBC {
+    color: $color-KBC;
+}
+
+
+.c-category-label--IRC {
+    color: $color-IRC;
+}
+

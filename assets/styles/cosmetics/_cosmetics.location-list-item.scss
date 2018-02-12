@@ -1,0 +1,67 @@
+/* ==========================================================================
+   
+    # LOCATION LIST ITEM
+
+========================================================================== */
+
+/**
+ * N.B. See o-location-list-item for layout behaviour
+ */
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ * 1. Should really be in OBJECTS but not worth it for just this
+ * 2. storelocator plugin sets this inline so must be trumped with !important
+ */
+
+.c-location-list-item {
+  background-color: $color-neutral-9 !important;
+  border-bottom: 1px solid $color-neutral-8;
+  &.s-is-focused {
+    background-color: $color-neutral-10 !important;
+    box-shadow: $box-shadow-border-highlight;
+  }
+  &:not(.s-is-focused) {
+    cursor: pointer; /*[1]*/
+    &:hover {
+      background-color: $color-neutral-10 !important; /*[2]*/
+    }
+  }
+}
+
+
+
+
+/* Children
+========================================================================== */
+
+.c-location-list-item__type {
+  font-weight: $font-weight-body-semi;
+}
+
+
+
+
+
+/* Style modifiers (for __type)
+========================================================================== */
+
+.c-location-list-item__type--BRANCH {
+  color: $color-BRANCH;
+}
+
+.c-location-list-item__type--IRC {
+  color: $color-IRC;
+}
+
+.c-location-list-item__type--KBC {
+  color: $color-KBC;
+}
+
+.c-location-list-item__type--KMC {
+  color: $color-KMC;
+}

@@ -1,0 +1,48 @@
+/* ==========================================================================
+   
+    # OVERFLOW GRADIENT
+
+========================================================================== */
+
+/**
+ * A gradient to indicate that the container is overflowing in a particular
+ * direction
+ */
+
+
+
+/* Variables
+========================================================================== */
+$breadth        : 25px;
+
+
+
+
+
+/* Base
+========================================================================== */
+
+.o-overflow-gradient {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+}
+
+
+
+
+
+/* Direction modifiers
+========================================================================== */
+
+.o-overflow-gradient--bottom {
+    bottom: 0;
+    height: $breadth;
+}
+
+.o-overflow-gradient--top {
+    top: 0;
+    height: $breadth;
+}

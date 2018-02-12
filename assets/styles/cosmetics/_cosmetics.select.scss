@@ -1,0 +1,33 @@
+/* ==========================================================================
+   
+    # SELECT
+
+========================================================================== */
+
+/**
+ * Cosmetics for custom dropdown
+ *
+ * N.B. For layout see o-select
+ */
+
+
+
+
+/* Base
+========================================================================== */
+
+.c-select {
+    appearance: none;
+    border-radius: 2px;
+    border: none;
+    background-color: transparent;
+    box-shadow: $box-shadow-border-input;
+    &:hover {
+        box-shadow: $box-shadow-border-input-active;
+    }
+}
+
+
+
+/* Chilren
+========================================================================== */

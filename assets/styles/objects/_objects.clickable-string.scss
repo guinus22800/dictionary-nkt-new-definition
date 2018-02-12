@@ -1,0 +1,29 @@
+/* ==========================================================================
+   
+    # CLICKABLE STRING
+
+========================================================================== */
+
+/**
+ * Intended mostly for inline links (external) but could be used in a
+ * variety of places
+ *
+ * N.B. See 'c-inline-link' for cosmetics
+ */
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ *
+ */
+
+.o-clickable-string {
+    position: relative;
+    display: inline-block;
+    padding: $unit-xs;
+    margin: -$unit-xs;
+    line-height: 1;
+}

@@ -1,0 +1,26 @@
+/* ==========================================================================
+   
+    # RESPONSIVE
+
+========================================================================== */
+
+/**
+ * Show / hide elements at various breakpoints
+ */
+
+
+
+/* Simple
+========================================================================== */
+
+.u-hidden-until-tablet {
+    @include mq($until: tablet) {
+        display: none;
+    }
+}
+
+.u-hidden-from-tablet {
+    @include mq($from: tablet) {
+        display: none;
+    }
+}

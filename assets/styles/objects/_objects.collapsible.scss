@@ -1,0 +1,39 @@
+/* ==========================================================================
+   
+    # COLLAPSIBLE
+
+========================================================================== */
+
+/**
+ * An collapseable / exapandable div
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-collapsible {
+    &.s-is-open {
+      > .o-collapsible__trigger-area {
+        margin-bottom: $unit-sm;
+      }
+      > .o-collapsible__hidden-area {
+        display: block;
+      }
+    }
+}
+
+
+
+
+
+
+.o-collapsible__trigger-area {
+
+}
+
+
+.o-collapsible__hidden-area {
+  display: none;
+}

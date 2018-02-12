@@ -1,0 +1,194 @@
+/* ==========================================================================
+   
+    # CONTROL
+
+========================================================================== */
+
+/**
+ * Cosmetics for both checkboxes and radio buttons
+ *
+ * N.B. For layout see o-control
+ */
+
+
+
+
+/* Base
+========================================================================== */
+
+.c-control {
+    //
+}
+
+
+
+/* Chilren
+========================================================================== */
+
+%indicator {
+    background-color: $color-neutral-10;
+    box-shadow: $box-shadow-border-input;
+}
+
+%indicator-disabled {
+    opacity: .6;
+    background-color: $color-neutral-8;
+    color: $color-neutral-10;
+}
+
+%indicator-checked {
+    background: $color-neutral-10;
+}
+
+%indicator-hover {
+    box-shadow: $box-shadow-border-input-active;
+}
+
+%indicator-checked-hover {
+    background: #2aa1c0;
+}
+
+%indicator-focus {
+    background: $color-neutral-10;
+    box-shadow: $box-shadow-border-input-active;
+}
+
+%indicator-focus-checked {
+    background: $color-neutral-10;
+}
+
+
+
+.c-control__input {
+    
+    opacity: 0;
+
+    ~ .c-control__label {
+        > .c-control__indicator {
+            @extend %indicator;
+        }
+    }
+    
+    &:focus {
+        ~ .c-control__label {
+            > .c-control__indicator {
+                @extend %indicator-focus;
+            }
+        }
+    }
+
+    &:checked {
+        ~ .c-control__label {
+            > .c-control_indicator {
+                @extend %indicator-checked;
+            }
+        }
+        &:focus {
+            ~ .c-control__input {
+                > .c-control__indicator {
+                    @extend %indicator-focus-checked;
+                }
+            }
+        }
+    }
+
+    &:disabled {
+        ~ .c-control__label {
+            > .c-control__indicator {
+                @extend %indicator-disabled;
+            }
+        }
+    }
+    
+    &:not([disabled]) {
+        &:checked {
+            ~ .c-control__label {
+                > .c-control__indicator {
+                    @extend %indicator-checked;
+                }
+            }
+        }
+    }
+}
+
+.c-control__label {
+    &:hover {
+        > .c-control__indicator {
+            @extend %indicator-hover;
+        }
+    }
+}
+
+
+
+
+/* Type modifiers
+========================================================================== */
+
+// RADIO
+.c-control--radio {    
+    > .c-control__label {
+        > .c-control__indicator {
+            border-radius: 100%;
+
+            &:after {
+                border-radius: 100%;
+                background: $color-neutral-0;
+            }
+        }
+    }
+    
+    > .c-control__input {
+        &:disabled {
+            ~ .c-control__indicator {
+                &:after {
+                    border-color: #7b7b7b;
+                }
+            }
+        }
+    }
+}
+
+
+// CHECKBOX (Needs work to be used)
+.c-control--checkbox{
+    > .c-control__label {
+        > .c-control__indicator {
+            &:after {
+                border-color: $color-orange-yellow;
+            }
+        }
+    }
+    > .c-control__input {
+        &:disabled {
+            ~ .c-control__indicator {
+                &:after {
+                    border-color: #7b7b7b;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* Style modifiers
+========================================================================== */
+
+.c-control--loud {
+    // color: $color-primary;
+    &.c-control--radio {
+        > .c-control__input {
+            &:checked {
+                ~ .c-control__label {
+                    > .c-control__indicator {
+                        &:after {
+                            background-color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

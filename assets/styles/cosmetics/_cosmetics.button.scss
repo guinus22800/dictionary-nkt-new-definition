@@ -1,0 +1,65 @@
+/* ==========================================================================
+   
+    # BUTTON
+
+========================================================================== */
+
+/**
+ * Button cosmetic styles
+ *
+ * N.B. Refer to o-button for layout
+ */
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ *
+ */
+
+.c-button {
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    background-color: $color-primary;
+    box-shadow: $box-shadow-border-button;
+    font-family: $font-family-body;
+    font-weight: $font-weight-body-semi;
+    color: $color-neutral-10;
+    transition: background-color .1s ease;
+    border-radius: 2px;
+
+    &.s-is-disabled {
+        background-color: $color-neutral-8;
+        color: $color-neutral-10;
+    }
+    
+    &:not(.s-is-disabled) {
+        &:hover,
+        &:active {
+            background-color: darken($color-primary, 7%);
+            box-shadow: $box-shadow-border-button-active;
+        }
+    }
+}
+
+
+
+/* Style modifiers
+========================================================================== */
+
+.c-button--quiet {
+    background-color: $color-neutral-10;
+    box-shadow: $box-shadow-border-button;
+    color: $color-neutral-3;
+    
+    &:not(.s-is-disabled) {
+        &:hover,
+        &:active {
+            background-color: $color-neutral-9;
+            box-shadow: $box-shadow-border-button-active;
+        }
+    }
+}

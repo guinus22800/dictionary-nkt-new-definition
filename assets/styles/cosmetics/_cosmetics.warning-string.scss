@@ -1,0 +1,22 @@
+/* ==========================================================================
+   
+    # USER STRING
+
+========================================================================== */
+
+/**
+ * Cosmetic styles for a string that the user entered, for example 'New York'
+ * in the example below 
+ *
+ *      Showing results for 'New York'
+ */
+
+
+
+ /* Base
+========================================================================== */
+
+.c-warning-string {
+    color: $color-red;
+    font-weight: $font-weight-body-semi;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><link href="./styles/main.css" rel="stylesheet"><base target="_blank"></head><body><div class="o-box"><div><p class="c-label c-label__title o-label o-label__title">TITLE :</p><p><input class="c-text-input o-text-input o-text-input__title js-title" type="text" placeholder="Title" name="title"><br></p></div><span><p class="c-label c-label__title o-label o-label__title">Definitions :</p><p><button type="button" class="o-button o-button--sm js-button-def-add">+</button> <button type="button" class="o-button o-button--sm js-button-def-del">-</button></p></span><p class="c-label c-label__content o-label o-label__content">Definie a link in the definition : {Link number}</p><ul class="o-definition-list__definition js-list-definition"></ul><p class="c-label c-label__title o-label o-label__title">Links :</p><p><button type="button" class="o-button o-button--sm js-button-link-add">+</button> <button type="button" class="o-button o-button--sm js-button-link-del">-</button></p><p class="c-label c-label__content o-label o-label__content">Put links in the same order than its appear in the definition</p><p class="c-label c-label__content o-label o-label__content">For a internal link use #Title (if the title content spaces, replace spaces by -, exemple : Close retreat : Close-retreat)</p><ul class="o-definition-list__definition js-list-links"></ul><button type="button" class="o-button--lg o-button js-button-generation">Generate JSON element</button><div><div><label class="c-label c-label__content o-label o-label__content" for="name">Json result :</label></div><textarea class="o-textarea o-textarea__ouput js-json" type="text" id="json" readonly="readonly">        
+  </textarea></div><button class="o-button--lg o-button js-copy-json-element">Copy Json Element</button><p class="c-label c-label__content o-label o-label__content">Put this element at the end of the Json file (dictionary-data.json), don't forget a comma between the JSON Elements</p><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script><script>var config = {
+    
+      /* Target Classes
+      ========================================================================== */
+      buttonGeneration                : 'js-button-generation',
+      titleElement                    : 'js-title',
+      numberDefinitions               : 'js-number-definition',
+      definition                     : 'js-definition-',
+      numberLinks                     : 'js-number-links',
+      nameLink                       : 'js-name-link-',
+      link                           : 'js-link-',
+      jsonElement                     : 'js-json',
+      buttonCopyJson                  : 'js-copy-json-element',
+
+
+      
+      /* Style Classes
+      ========================================================================== */
+      itemTitleClass                : 'c-definition-list  o-definition-list__title  u-text-body-semi',
+      itemDefinitionClass           : 'c-definition-list  o-definition-list__definition',
+      definitionDividerClass        : 'c-definition-list  o-definition-list__definition-divider u-text-body-semi',
+      itemLinkClass                 : 'c-definition-list  c-definition-list__link',
+
+
+      /* Global variable
+      ========================================================================== */
+      numberOfDefinitions            : 0,
+      numberOfLinks                 : 0,
+
+
+    }</script><script src="./js/buddhist-addElement.min.js"></script></div></body></html>

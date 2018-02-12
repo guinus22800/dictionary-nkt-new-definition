@@ -1,0 +1,27 @@
+/* ==========================================================================
+   
+    # RESETS
+
+========================================================================== */
+
+/**
+ * Reset undesireable browser defaults to a more workable default.
+ */
+
+
+
+/* XX
+========================================================================== */
+* {
+    box-sizing: border-box;
+    &:after,
+    &:before {
+        box-sizing: border-box;
+    }
+}
+
+input,
+button {
+    // border: none;
+    // appearance: none;
+}

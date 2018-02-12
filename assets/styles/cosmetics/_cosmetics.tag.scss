@@ -1,0 +1,134 @@
+/* ==========================================================================
+   
+    # TAG
+
+========================================================================== */
+
+/**
+ * Colored background tags thingies
+ *
+ * N.B. May require o-input-trigger to work properly
+ */
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ * 1. Makes use of the o-input-trigger class - which must be placed before 
+ *    the c-tag element and with proper use of label/id/for to work:
+ *    
+ *      <input id="xyz" type="radio" class="o-input-trigger o-input-trigger--radio">      
+ *      <label for="xyz" class="c-tag">XYZ</label>
+ *
+ */
+
+%c-tag-active {
+    color: $color-neutral-10;
+}
+
+.c-tag {
+    color: $color-neutral-3;
+    box-shadow: inset 0 0 0 1px rgba($color-neutral-0, .1);
+    font-family: $font-family-body;
+    font-weight: $font-weight-body-semi;
+    &:hover {
+        @extend %c-tag-active;
+    }
+    @at-root {
+        .o-input-trigger { /*[1]*/
+            &:checked {
+                ~ .c-tag {
+                    @extend %c-tag-active;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* Type modifiers
+========================================================================== */
+
+%c-tag-active-KMC {
+    background-color: $color-KMC;
+}
+
+
+%c-tag-active-KBC {
+    background-color: $color-KBC;
+}
+
+
+%c-tag-active-IRC {
+    background-color: $color-IRC;
+}
+
+
+%c-tag-active-BRANCH {
+    background-color: $color-BRANCH;
+}
+
+
+.c-tag--KBC {
+    &:hover {
+        background-color: $color-KBC;
+    }
+    @at-root {
+        .o-input-trigger {
+            &:checked {
+                ~ .c-tag--KBC {
+                    @extend %c-tag-active-KBC;
+                }
+            }
+        }
+    }
+}
+
+.c-tag--KBC {
+    &:hover {
+        background-color: $color-KBC;
+    }
+    @at-root {
+        .o-input-trigger {
+            &:checked {
+                ~ .c-tag--KBC {
+                    @extend %c-tag-active-KBC;
+                }
+            }
+        }
+    }
+}
+
+.c-tag--IRC {
+    &:hover {
+        background-color: $color-IRC;
+    }
+    @at-root {
+        .o-input-trigger {
+            &:checked {
+                ~ .c-tag--IRC {
+                    @extend %c-tag-active-IRC;
+                }
+            }
+        }
+    }
+}
+
+.c-tag--BRANCH {
+    &:hover {
+        background-color: $color-BRANCH;
+    }
+    @at-root {
+        .o-input-trigger {
+            &:checked {
+                ~ .c-tag--BRANCH {
+                    @extend %c-tag-active-BRANCH;
+                }
+            }
+        }
+    }
+}

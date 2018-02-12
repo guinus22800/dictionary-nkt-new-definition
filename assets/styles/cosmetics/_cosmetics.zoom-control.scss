@@ -1,0 +1,61 @@
+/* ==========================================================================
+   
+    # ZOOM CONTROL
+
+========================================================================== */
+
+/**
+ * The zoom-in zoom-out controls on the map
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.c-zoom-control {
+  box-shadow: inset 0 0 0 1px $color-neutral-7;
+  background-color: $color-neutral-10;
+}
+
+
+
+
+
+/* Chilren
+========================================================================== */
+
+.c-zoom-control__item {
+  transition: opacity .1s ease;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  opacity: .5;
+  &.s-is-disabled {
+    opacity: .2;
+    background-color: $color-neutral-8;
+  }
+  &:hover {
+    &:not(.s-is-disabled) {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+/**
+ * 1. Made the image relative to the stylesheet rather than to the URL
+ *    as this project is not served to the root of the server directory
+ */
+
+
+.c-zoom-control__item--plus {
+  background-image: url('../img/custom-zoom-control-plus.png'); /*[1]*/
+  border-bottom: 1px solid $color-neutral-7;
+}
+
+
+.c-zoom-control__item--minus {
+  background-image: url('../img/custom-zoom-control-minus.png') /*[1]*/
+}

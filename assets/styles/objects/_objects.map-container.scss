@@ -1,0 +1,74 @@
+/* ==========================================================================
+   
+    # MAP CONTAINER
+
+========================================================================== */
+
+/**
+ * The main 'layout' related styling of the map should be applied here
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-map-container {
+    position: relative;
+    z-index: 30;
+    
+    &.s-is-sticky {
+        position: fixed;
+        width: 100%;
+    }
+
+    @include mq($until: tablet) {
+        height: 200px;
+        
+        @media (min-height: 500px) {
+            height: 250px;
+        }
+    
+        @media (min-height: 600px) {
+            height: 300px;
+        }
+    
+        @media (min-height: 700px) {
+            height: 400px;
+        }
+    }
+
+    @include mq($from: tablet) {
+        position: fixed;
+        height: auto;
+        width: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+
+/* Children
+========================================================================== */
+.o-map-container__map {
+    height: 100%;
+}
+
+.o-map-container__loading-container {
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.o-map-container__loader {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-bottom: $unit-md;
+}

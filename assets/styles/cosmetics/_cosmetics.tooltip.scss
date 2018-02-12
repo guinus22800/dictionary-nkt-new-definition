@@ -1,0 +1,40 @@
+/* ==========================================================================
+   
+    # TOOLTIP
+
+========================================================================== */
+
+/**
+ * Box for displaying helpful information in a particular spot
+ *
+ * N.B Refer to o-tooltip for layout
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.c-tooltip {
+    background-color: $color-orange;
+    color: $color-lightness-10;
+    font-family: $font-family-body;
+    font-weight: $font-weight-body-regular;
+    border-radius: 4px;
+    opacity: 0;
+    &:before {
+        border-radius: 0 4px;
+        background-color: $color-orange;
+    }
+}
+
+
+.c-tooltip--out {
+    transition: opacity .2s ease;
+    opacity: 0;
+}
+
+.c-tooltip--in {
+    transition: opacity .2s ease;
+    opacity: 1;
+}

@@ -1,0 +1,62 @@
+/* ==========================================================================
+   
+    # HEADER
+
+========================================================================== */
+
+/**
+ *
+ */
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ *
+ */
+
+.o-header {
+    @include mq($until: tablet) {
+        z-index: 1;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: relative;
+    }
+}
+
+
+
+
+
+
+/* Chilren
+========================================================================== */
+
+.o-header__logo {
+    width: 60px;
+    position: relative;
+    margin-top: -4px;
+}
+
+
+.o-header__sticky-bit {
+    
+    &.s-is-sticky {
+        z-index: 20;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+        @include mq($from: tablet) {
+            width: 33.3333333%;
+        }
+        
+        @include mq($from: desktop) {
+            width: 25%;
+        }
+    }
+}

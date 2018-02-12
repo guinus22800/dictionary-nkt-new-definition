@@ -1,0 +1,47 @@
+/* ==========================================================================
+   
+    # OVERFLOW GRADIENT
+
+========================================================================== */
+
+/**
+ * A gradient to indicate that the container is overflowing in a particular
+ * direction
+ */
+
+
+
+/* Variables
+========================================================================== */
+$color-from     : $color-neutral-0;
+$color-to       : rgba($color-neutral-0, 0);
+
+
+
+
+
+/* Base
+========================================================================== */
+
+.c-overflow-gradient {
+    opacity: 0;
+    transition: opacity .2s ease;
+    &.s-is-visible {
+        opacity: .25;
+    }
+}
+
+
+
+
+
+/* Direction modifiers
+========================================================================== */
+
+.c-overflow-gradient--bottom {
+    background-image: linear-gradient(to top, $color-from, $color-to);
+}
+
+.c-overflow-gradient--top {
+    background-image: linear-gradient(to bottom, $color-from, $color-to);
+}

@@ -1,0 +1,28 @@
+/* ==========================================================================
+   
+    # ALIASES
+
+========================================================================== */
+
+/**
+ * Reassign variables and functions
+ */
+
+
+
+/* Inuit global spacing unit
+========================================================================== */
+
+$unit-xs: $inuit-global-spacing-unit-tiny;
+$unit-sm: $inuit-global-spacing-unit-small;
+$unit-md: $inuit-global-spacing-unit;
+$unit-lg: $inuit-global-spacing-unit-large;
+$unit-xl: $inuit-global-spacing-unit-huge;
+
+
+
+/* Inuit font-size mixin
+========================================================================== */
+@mixin font-size($args...) {
+    @include inuit-font-size($args...);
+}

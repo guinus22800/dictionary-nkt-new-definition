@@ -1,0 +1,131 @@
+/* ==========================================================================
+   
+    # CONTROL
+
+========================================================================== */
+
+/**
+ * Layout for both checkboxes and radio buttons
+ *
+ * N.B. For cosmetics see c-control
+ */
+
+
+/* Variables
+========================================================================== */
+$diameter: 20px;
+$inner-diameter: 12px;
+
+
+
+
+/* Base
+========================================================================== */
+
+.o-control {
+	@include font-size($font-size-md);
+	position: relative;
+	display: block;
+	padding-left: $diameter + $unit-xs;
+	cursor: pointer;
+}
+
+
+
+/* Chilren
+========================================================================== */
+%indicator-disabled {
+    pointer-events: none;
+    opacity: .6;
+    background-color: $color-neutral-8;
+    color: $color-neutral-10;
+}
+
+
+.o-control__input {
+    
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+
+    &:checked {
+        ~ .o-control__label {
+            > .o-control__indicator {
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+    &:disabled {
+        ~ .o-control__label {
+            > .o-control__indicator {
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+
+
+.o-control__label {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: $unit-sm;
+}
+
+    .o-control__indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $diameter;
+        height: $diameter;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+    }
+
+
+
+
+
+/* Type modifiers
+========================================================================== */
+
+// RADIO
+.o-control--radio {    
+    > .o-control__label {
+        > .o-control__indicator {
+            &:after {
+                top: ($diameter - $inner-diameter) / 2;
+                left: ($diameter - $inner-diameter) / 2;
+                width: $inner-diameter;
+                height: $inner-diameter;
+            }
+        }
+    }
+}
+
+
+// CHECKBOX (Needs work to be used)
+.o-control--checkbox{
+    > .o-control__label {
+        > .o-control__indicator {
+            &:after {
+                top: 3px;
+                left: 6px;
+                width: 5px;
+                height: 10px;
+                transform: rotate(45deg);
+                border: solid transparent;
+                border-width: 0 2px 2px 0;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   
+    # MAP MARKER LABEL
+
+========================================================================== */
+
+/**
+ * The markers on the are generated with absolute size values passed directly
+ * to the API, and the label is generated with another plugin on top of that,
+ * so the placement of the label is a little strange (hence its one class)
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-map-marker-label {
+  @include inuit-font-size(17px);
+  text-align: center;
+  width: 25px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}

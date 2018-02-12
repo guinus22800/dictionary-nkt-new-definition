@@ -1,0 +1,29 @@
+/* ==========================================================================
+   
+    # INPUT TRIGGER
+
+========================================================================== */
+
+/**
+ * An invisible input placed before a label which can be used to style
+ * the label via :checked pseudo-class
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-input-trigger {
+    @include inuit-hidden-visually();
+}
+
+
+
+
+/* Type modifiers
+========================================================================== */
+
+.o-input-trigger--radio {
+    //
+}

@@ -1,0 +1,161 @@
+/* ==========================================================================
+   
+    # GLOBAL VARIABLES
+
+========================================================================== */
+
+/**
+ * Project-wide variables
+ */
+
+
+
+/* Layout
+========================================================================== */
+
+$control-panel-width-desktop: 400px;
+
+
+
+
+ /* Colors
+========================================================================== */
+
+// Brand
+$color-primary: #0096D6;
+$color-secondary: #07B76E;
+
+// By contrast
+$color-neutral-10: #fff;
+$color-neutral-9: #f1f1f1;
+$color-neutral-8: #ddd;
+$color-neutral-7: #ccc;
+$color-neutral-3: #666;
+$color-neutral-2: #333;
+$color-neutral-1: #111;
+$color-neutral-0: #000;
+
+// By lightness
+$color-lightness-10: #fff;
+$color-lightness-9: #f1f1f1;
+$color-lightness-8: #ddd;
+$color-lightness-7: #ccc;
+$color-lightness-3: #666;
+$color-lightness-2: #333;
+$color-lightness-1: #111;
+$color-lightness-0: #000;
+
+// By name
+$color-red: #C03221;
+$color-red-orange: #E54E31;
+$color-orange: #EA8C55;
+$color-orange-yellow : rgb(201, 174, 137);
+$color-pink: #E83F6F;
+$color-blue: #0096D6;
+$color-green: #07B76E;
+$color-yellow: #FFFF00;
+
+// Map item type (capitalized to match data response for convenience)
+$color-BRANCH: $color-green;
+$color-KMC: $color-orange;
+$color-KBC: $color-red;
+$color-IRC: $color-pink;
+
+// $color-BRANCH: $color-neutral-0;
+// $color-KMC: $color-neutral-0;
+// $color-KBC: $color-neutral-0;
+// $color-IRC: $color-neutral-0;
+
+
+
+
+
+/* Breakpoints
+========================================================================== */
+
+$mq-breakpoints: (
+    mobile:  400px,
+    tablet:  920px,
+    desktop: 1100px,
+    wide:    1600px
+);
+
+
+
+
+
+/* Layout
+========================================================================== */
+
+$wrapper-width: 1200px;
+$wrapper-width-lg: 1600px;
+$wrapper-width-sm: 900px;
+
+
+
+
+
+/* Typography
+========================================================================== */
+
+$font-family-display: "kozuka-gothic-pro", sans-serif;
+$font-family-body: "myriad-pro", sans-serif;
+
+$font-weight-display-medium: 500;
+$font-weight-body-regular: 300;
+$font-weight-body-semi: 600;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+
+$font-size-h1: $font-size-xl;
+$font-size-h2: $font-size-lg;
+$font-size-h3: $font-size-md;
+$font-size-h4: $font-size-md;
+$font-size-h5: $font-size-md;
+$font-size-h6: $font-size-md;
+
+$heading-trailer: $inuit-global-spacing-unit-small;
+
+
+
+
+/* Box-shadow-borders
+========================================================================== */
+
+$outer-heavy: inset 0 0 0 1px rgba($color-neutral-0, .4);
+$outer-mid: inset 0 0 0 1px rgba($color-neutral-0, .2);
+$outer-faint: inset 0 0 0 1px rgba($color-neutral-0, .05);
+
+$inner-heavy: inset 0 0 0 4px rgba($color-neutral-0, .1);
+$inner-faint: inset 0 0 0 3px rgba($color-neutral-10, .1), inset 0 0 0 4px rgba($color-neutral-0, .05);
+
+$inner-primary: inset 0 0 0 4px rgba($color-primary, 1);
+
+$box-shadow-border-input: $outer-mid, $inner-faint;
+$box-shadow-border-input-active: $outer-heavy, $inner-faint;
+$box-shadow-border-input-disabled: $outer-faint, $inner-faint;
+
+$box-shadow-border-tooltip: $outer-mid;
+
+$box-shadow-border-button: $outer-mid, $inner-faint;
+$box-shadow-border-button-active: $outer-heavy, $inner-heavy;
+
+$box-shadow-border-highlight: inset 0 0 0 3px rgba($color-neutral-10, 1), inset 0 0 0 4px $color-primary;
+
+
+
+/* Scroll list gradient
+========================================================================== */
+
+$scroll-list-gradient: 0 0 30px 0 rgba($color-lightness-0, .2);
+
+
+
+
+/* Buttons
+========================================================================== */
+$button-border-radius: 2px;

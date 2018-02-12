@@ -1,0 +1,51 @@
+/* ==========================================================================
+   
+    # BOX
+
+========================================================================== */
+
+/**
+ * N.B. This stylesheer simply overrides some attributes of the inuit
+ * o-box class
+ */
+
+
+/* Variables
+========================================================================== */
+$width: 40px;
+
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ * 1. Must be used in conjunction with 'google.maps.ControlPosition'
+ *    in storelocator.js
+ */
+
+.o-zoom-control {
+  position: absolute;
+  top: 0; /*[1]*/
+  left: 0; /*[1]*/
+  margin: $unit-md;
+}
+
+
+
+/* Children
+========================================================================== */
+
+.o-zoom-control__item {
+  cursor: pointer;
+  display: block;
+  width: $width;
+  height: $width;
+  
+  &.s-is-disabled {
+    cursor: default;
+  }
+
+}
+

@@ -1,0 +1,47 @@
+/* ==========================================================================
+   
+    # TEXT INPUT
+
+========================================================================== */
+
+/**
+ * N.B. Refer to c-text-input for cosmetics
+ */
+
+
+
+/* Variables
+========================================================================== */
+$radius: $button-border-radius;
+
+
+ /* Base
+========================================================================== */
+
+.o-text-input-group {
+    display: flex;
+}
+
+
+
+
+
+/* Children
+========================================================================== */
+/**
+ * 1. Border radius should really be in cosmetics but makes sense here for
+ *    this case I think
+ */
+
+.o-text-input-group__field {
+    padding: $unit-sm;
+    max-width: none;
+    width: 100%;
+    border-radius: $radius 0 0 $radius; /*[1]*/
+}
+
+
+.o-text-input-group__button {
+    padding: $unit-sm;
+    border-radius: 0 $radius $radius 0; /*[1]*/
+}

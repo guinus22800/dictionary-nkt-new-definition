@@ -1,0 +1,60 @@
+/* ==========================================================================
+   
+    # TOOLTIP
+
+========================================================================== */
+
+/**
+ * Box for displaying helpful information in a particular spot
+ *
+ * N.B Refer to c-tooltip for cosmetics
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-tooltip {
+    position: absolute;
+    display: inline-block;
+    padding: $unit-sm;
+    z-index: 1000;
+    pointer-events: none;
+    text-align: center;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+
+
+
+/* Direction modifiers
+========================================================================== */
+
+.o-tooltip--right {
+    top: 50%;
+    right: 0;
+    transform: translate(95%, -50%);
+    &:before {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+
+.o-tooltip--bottom {
+    left: 50%;
+    transform: translate(-50%, 95%);
+    &:before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}

@@ -1,0 +1,76 @@
+/* ==========================================================================
+   
+    # CONTROL PANEL
+
+========================================================================== */
+
+/**
+ * The main layout behaviour of the control panel area
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-control-panel {
+    height: 100%;
+}
+
+
+
+
+
+/* Children
+========================================================================== */
+
+.o-control-panel__inner {
+    height: 100%;
+}
+
+    
+    .o-control-panel__content-wrapper {
+        text-align: left;
+        height: 100%;
+    }
+
+        .o-control-panel__list-wrapper {
+            height: 100%;
+        }
+            
+            .o-control-panel__list {
+                height: 100%;
+                overflow-y: scroll;
+                position: relative;
+                margin-bottom: 0;
+                
+                &.s-is-reached {
+                    overflow-y: scroll;
+                }
+            }
+
+
+
+/* Layout modifiers
+========================================================================== */
+
+/**
+ * 1. Center horizontally
+ * 2. Center vertically
+ */
+
+.o-control-panel--center {
+    width: 100%; /*[1]*/ 
+    text-align: center; /*[1]*/ 
+    height: 100%; /*[2]*/
+    display: table; /*[2]*/
+    
+    > .o-control-panel__inner {
+        margin-left: auto; /*[1]*/
+        margin-right: auto; /*[1]*/
+        display: inline-block; /*[1]*/
+        display: table-cell; /*[2]*/
+        vertical-align: middle; /*[2]*/
+        padding: $unit-lg;
+    }
+}

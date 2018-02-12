@@ -1,0 +1,29 @@
+/* ==========================================================================
+   
+    # INDETERMINATE LOADER
+
+========================================================================== */
+
+/**
+ * Loader to be used when the time remaining is unknown
+ */
+
+
+
+/* Variables
+========================================================================== */
+
+$color: $color-primary;
+
+
+
+
+/* Base
+========================================================================== */
+
+.c-indeterminate-loader {
+  border: 0px solid $color;
+  border-radius: 50%;
+  box-shadow: 0 -20px 0 24px $color inset;
+  animation: rotate 1s infinite linear;
+}

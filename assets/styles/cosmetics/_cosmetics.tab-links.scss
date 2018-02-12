@@ -1,0 +1,48 @@
+/* ==========================================================================
+   
+    # TAB LINKS
+
+========================================================================== */
+
+/**
+ * Row of links to navigate (showing active, clickable etc
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.c-tab-links {
+  // 
+}
+
+
+
+/* Children
+========================================================================== */
+.c-tab-links__link {
+  cursor: pointer;
+  color: $color-orange;
+  text-decoration: none;
+  opacity: .8;
+  background-color: transparent;
+  transition: background-color .1s ease, color .1s ease;
+  
+  &.s-is-active {
+    background-color: $color-orange;
+    color: $color-neutral-10;
+    pointer-events: none;
+    opacity: 1;
+    border-radius: 2px;
+  }
+  
+  &:active,
+  &:hover {
+    &:not(.s-is-active) {
+      opacity: 1;
+      background-color: $color-neutral-8;
+    }
+  }
+  
+}

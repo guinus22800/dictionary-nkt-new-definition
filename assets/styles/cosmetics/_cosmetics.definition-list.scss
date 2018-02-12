@@ -1,0 +1,39 @@
+/* ==========================================================================
+   
+    # DEFINITION LIST (including title and definition)
+
+========================================================================== */
+
+/**
+ * Definiton list items
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.c-definition-list {
+  font-family     : "myriad-pro",sans-serif;
+  text-rendering  : "optimizeLegibility";
+  font-size       : 100%; 
+}
+
+
+
+/* Children
+========================================================================== */
+.c-definition-list__title {
+
+}
+
+.c-definition-list__definition {
+
+}
+
+.c-definition-list__link {
+  color           : $color-orange-yellow;
+  text-decoration : none;
+  
+}
+

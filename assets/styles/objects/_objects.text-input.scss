@@ -1,0 +1,32 @@
+/* ==========================================================================
+   
+    # TEXT INPUT
+
+========================================================================== */
+
+/**
+ * N.B. Refer to c-text-input for cosmetics
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-text-input {
+    @include font-size($font-size-sm);
+    max-width: none;
+    display: inline-block;
+    padding: $unit-sm;
+    margin-bottom: 1.5em;
+}
+
+.o-text-input__title {
+    width: 40em;
+}
+
+.o-text-input__other {
+    width: 30em;
+    margin-left: 0.5em;
+}
+

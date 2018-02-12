@@ -1,0 +1,37 @@
+/* ==========================================================================
+   
+    # WRAPPER
+
+========================================================================== */
+
+/**
+ * Wrap page content to a max-width
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-wrapper {
+  position: relative;
+  max-width: $wrapper-width;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+}
+
+
+
+
+
+/* Size modifiers
+========================================================================== */
+
+.o-wrapper--sm {
+  max-width: $wrapper-width-sm;
+}
+
+.o-wrapper--lg {
+  max-width: $wrapper-width-lg;
+}

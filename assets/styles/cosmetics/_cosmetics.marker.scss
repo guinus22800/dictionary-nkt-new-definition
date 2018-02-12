@@ -1,0 +1,32 @@
+/* ==========================================================================
+   
+    # MARKER
+
+========================================================================== */
+
+/**
+ * Cosmetics for all map markers (in list and on map)
+ *
+ * N.B. See o-marker and o-map-marker-label for layout behaviour
+ */
+
+
+
+/* Base
+========================================================================== */
+
+/**
+ *
+ */
+
+.c-marker {
+  font-family: $font-family-display;
+  font-weight: $font-weight-display-medium;
+  color: $color-neutral-10;
+}
+
+
+img[src^='https://maps.gstatic.com/mapfiles/transparent.png'] {
+  -webkit-filter: drop-shadow( -5px -5px 5px #000 ); 
+            filter: drop-shadow( -5px -5px 5px #000 );
+}

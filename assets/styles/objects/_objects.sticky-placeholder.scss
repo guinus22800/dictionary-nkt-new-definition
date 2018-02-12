@@ -1,0 +1,21 @@
+/* ==========================================================================
+   
+    # STICKY PLACEHOLDER
+
+========================================================================== */
+
+/**
+ * Placeholder which replicates the height of a sticky element when it goes
+ * from relative to fixed/sticky.
+ *
+ * It must have some styles applied for jQuery to get the clientHeight
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-sticky-placeholder {
+    position: relative;
+}

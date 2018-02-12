@@ -1,0 +1,48 @@
+/* ==========================================================================
+   
+    # DEFINITION LIST (including title and definition)
+
+========================================================================== */
+
+/**
+ * Definiton list items
+ */
+
+
+
+/* Variables
+========================================================================== */
+$title-margin-bottom: $unit-xs;
+$group-margin-bottom: $unit-lg;
+
+
+
+/* Base
+========================================================================== */
+
+.o-definition-list {
+
+}
+
+
+
+/* Children
+========================================================================== */
+.o-definition-list__title {
+    margin-bottom: $title-margin-bottom;
+    // margin-bottom: 5px;
+}
+
+.o-definition-list__definition {
+    margin-left: 0;
+    // margin-bottom: 30px
+    margin-bottom: $group-margin-bottom;
+    color: $color-neutral-3;
+    list-style-type: none;
+}
+
+.o-definition-list__definition-divider {
+    margin-top: (-$group-margin-bottom) + $title-margin-bottom;
+    margin-bottom: $title-margin-bottom;
+}
+

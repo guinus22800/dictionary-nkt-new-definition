@@ -1,0 +1,49 @@
+/* ==========================================================================
+   
+    # BUTTON
+
+========================================================================== */
+
+/**
+ * Basic button layouts
+ *
+ * N.B. Refer to c-button for cosmetics
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-button {
+    cursor: pointer;
+    display: inline;
+    text-align: center;
+}
+
+
+
+
+/* Size modiifers
+========================================================================== */
+.o-button--sm {
+    @include font-size($font-size-sm);
+    width: 2em;
+    height: 2em;
+    border-radius: 0.5em;
+}
+
+.o-button--lg {
+    @include font-size($font-size-md);
+    padding: $unit-sm $unit-md;
+    border-radius: 0.5em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+
+
+/* Layout modifiers
+========================================================================== */
+.o-button--stretch {
+    width: 100%;
+}

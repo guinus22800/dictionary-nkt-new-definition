@@ -1,0 +1,32 @@
+/* ==========================================================================
+   
+    # OBJECTS
+
+========================================================================== */
+
+/**
+ * Reusable layout classes (ideally non-cosmetic)
+ *
+ * N.B. May require o-input-trigger to work properly
+ */
+
+
+
+/* Base
+========================================================================== */
+
+.o-tag {
+    padding: $unit-xs;
+    font-weight: $font-weight-body-semi;
+    cursor: pointer;
+    
+    @at-root {
+        .o-input-trigger--radio {
+            &:checked {
+                ~ .o-tag {
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
